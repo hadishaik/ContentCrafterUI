@@ -62,7 +62,7 @@ export default function ContentArea({
 
   const handleGenerateContent = async () => {
     await axios
-      .post(`${process.env.SERVER_URL}/api/generate`, promptSettings)
+      .post(`https://contentcrafter-service.onrender.com/api/generate`, promptSettings)
       .then((res) => contentState(res.data.content))
       .catch((error) => console.log("object", error));
   };
