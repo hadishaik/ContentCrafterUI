@@ -63,7 +63,7 @@ export default function PromptSettings({
     };
     setIsGenerating(true);
     await axios
-      .post(`${process.env.SERVER_URL}/api/generate`, payLoad)
+      .post(`https://contentcrafter-service.onrender.com/api/generate`, payLoad)
       .then((res) => contentState(res.data))
       .catch((error) => console.log("object", error));
   };
