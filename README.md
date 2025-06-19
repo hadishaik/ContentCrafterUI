@@ -1,2 +1,2 @@
 # ContentCrafterUI
-Your Co-writer for every platform
+Your Personal Co-writer for every platform
