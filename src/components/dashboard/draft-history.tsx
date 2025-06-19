@@ -30,7 +30,7 @@ export default function DraftHistory() {
   const FetchHistory = async (email: string) => {
     try {
       const response = await axios.get(
-        `${process.env.SERVER_URL}/api/content/recent?email=${email}`
+        `https://contentcrafter-service.onrender.com/api/content/recent?email=${email}`
       );
       const data = await response.data;
       setDrafts(data);
